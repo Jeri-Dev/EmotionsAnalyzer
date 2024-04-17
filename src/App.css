@@ -1,0 +1,102 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  background-color: #0056b3;
+  height: 100vh;
+}
+
+section {
+  padding: 40px;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  background-color: #fff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  align-items: center;
+}
+
+.transcription-section,
+.result-section {
+  width: 70vw;
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.transcription-input {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.transcription-section h1,
+.result-section h2 {
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.transcription-input label {
+  display: block;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.transcription-input input[type="file"] {
+  margin-bottom: 20px;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.transcription-input button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 16px;
+}
+
+.transcription-input button:hover {
+  background-color: #0056b3;
+}
+
+.result-section .happy-face {
+  font-size: 36px;
+  color: #4caf50;
+}
+
+aside {
+  margin-top: 30px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+aside p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #888;
+  font-size: 14px;
+}
