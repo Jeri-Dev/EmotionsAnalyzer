@@ -34,12 +34,6 @@ section {
   
 }
 
-.transcription-input {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-}
-
 .transcription-section h1,
 .result-section h2 {
   margin-bottom: 30px;
@@ -52,15 +46,28 @@ section {
   color: #555;
 }
 
-.transcription-input input[type="file"] {
-  margin-bottom: 20px;
+input[type="file"] {
   padding: 50px;
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
 }
 
-.transcription-input button {
+.section-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  margin: 20px;
+}
+
+#speaker {
+  width: 250px;
+  height: 30px;
+  font-size: 16px;
+}
+
+#transcribe-button {
   padding: 15px 30px;
   background-color: #007bff;
   color: #fff;
@@ -69,7 +76,9 @@ section {
   cursor: pointer;
   transition: background-color 0.3s;
   font-size: 16px;
+  height: 60px;
 }
+
 
 .transcription-input button:hover {
   background-color: #0056b3;
@@ -100,3 +109,91 @@ footer {
   color: #888;
   font-size: 14px;
 }
+
+
+.drop-container {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #555;
+  color: #444;
+  cursor: pointer;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+  width: 600px;
+  margin-bottom: 33px;
+  margin-top: 15px;
+}
+
+.drop-container:hover {
+  background: #eee;
+  border-color: #111;
+}
+
+.drop-container:hover .drop-title {
+  color: #222;
+}
+
+.drop-title {
+  color: #444;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  transition: color .2s ease-in-out;
+}
+
+
+input[type=file] {
+  width: 400px;
+  max-width: 100%;
+  color: #444;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #555;
+  font-size: 14px;
+}
+
+input[type=file]::file-selector-button {
+  margin-right: 16px;
+  border: none;
+  background: #084cdf;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background .2s ease-in-out;
+}
+
+input[type=file]::file-selector-button:hover {
+  background: #0d45a5;
+}
+
+.results-section {
+  gap: 3em;
+  display: flex;
+}
+
+.results-section_2 {
+  width: 50%;
+  font-weight: 500;
+}
+.transcription {
+  text-align: left;
+  font-weight: normal;
+}
+
+.results-section_1 {
+  width: 50%;
+}
+
+.fell {
+  font-size: 22px;
+  font-weight: 600;
+}
+
